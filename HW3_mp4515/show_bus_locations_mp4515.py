@@ -16,12 +16,12 @@ except ImportError:
 if not len(sys.argv) == 3:
     print ("Invalid number of arguments. Run as: python aPythonScriptThatWritesToCSV.py mtakey busline mycvs.csv")
     sys.exit()
-
+#CITATION: https://stackoverflow.com/questions/13921910/python-urllib2-receive-json-response-from-url
 url= "http://bustime.mta.info/api/siri/vehicle-monitoring.json?key="+sys.argv[1]+"&VehicleMonitoringDetailLevel=calls&LineRef="+sys.argv[2]
 response = urllib.urlopen(url)
 data = response.read().decode("utf-8")
 data = json.loads(data)
-
+#CITATION: GROUP WORK
 data1=data["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"]
 data2=data1[0]["VehicleActivity"]
 x = data2[0]['MonitoredVehicleJourney']['VehicleLocation']['Latitude']
