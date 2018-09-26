@@ -18,7 +18,7 @@ url= "http://bustime.mta.info/api/siri/vehicle-monitoring.json?key="+sys.argv[1]
 response = urllib.urlopen(url)
 data = response.read().decode("utf-8")
 data = json.loads(data)
-
+# CITATION: https://stackoverflow.com/questions/13921910/python-urllib2-receive-json-response-from-url
 csv_file = open (sys.argv[3],'w')
 csv_file.write('Latitude,Longitude,Stop Name,Stop Status\n')
 
@@ -41,5 +41,5 @@ for i in range(count):
             status=data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][i]['MonitoredVehicleJourney']['OnwardCalls']['OnwardCall'][j]['Extensions']['Distances']['PresentableDistance']       
             stop=data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][i]['MonitoredVehicleJourney']['OnwardCalls']['OnwardCall'][j]['StopPointName']
             csv_file.write(str(loc['Latitude'])+','+str(loc['Longitude'])+','+str(stop)+','+str(status)+'\n')
-
+# CITATION: work done in group
 csv_file.close()
