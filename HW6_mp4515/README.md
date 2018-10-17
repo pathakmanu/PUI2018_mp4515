@@ -14,5 +14,10 @@
 ## Concluding Image 
 ![Test_File](pic12.png)
 
+|Statistical Analysis |IV(s) | IV Types|DV(s)| DV Types| Control Var| Control Var Type| Question to be answered | Ho  | Alpha | link to paper|
+| --------------------|:----:| -------------:|--------:|-----------:|----------------:|------------------------:|----:|------:|-------------:|
+|Spearman's correlation coefficient|Inequality Index|continuous|antibiotics resistance (Defined daily Doses per 1000 inhabitants per day)|categorical|NA|NA|is there some cognition difference or similarity in male & females with autism|if correlations exist between income inequality and antimicrobial resistance | NA |https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0073115 |
 
+## Concluding Image 
+![Test_File](PIC3.png)
 
