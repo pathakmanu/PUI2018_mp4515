@@ -4,3 +4,7 @@
 
 ## USPS deliver map 
 ![Delivery Map](plot_delivery.png)
+
+# Assignment 2
+## Link to the second assignment is here:
+https://www.authorea.com/336172/BDGOGQ_zQs9fHArzcvAfnQ
