@@ -7,4 +7,4 @@
 
 # Assignment 2
 ## Link to the second assignment is here:
-https://www.authorea.com/336172/BDGOGQ_zQs9fHArzcvAfnQ
+https://www.authorea.com/users/249728/articles/336172-t-test-on-citibike-data
